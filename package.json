@@ -1,12 +1,13 @@
 {
     "name": "stream-chat-react-native-devtools",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Developer tools for Stream Chat React Native",
-    "main": "src/index.tsx",
+    "main": "src/index.ts",
     "author": "Stream.io Inc",
     "license": "SEE LICENSE IN LICENSE",
     "files": [
-        "build"
+        "build",
+        "src"
     ],
     "homepage": "https://github.com/GetStream/stream-chat-react-native-devtools",
     "repository": {
