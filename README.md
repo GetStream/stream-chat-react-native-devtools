@@ -6,7 +6,7 @@ Stream chat React Native Devtools is a collection of all the development tools y
 
 ## 📝 Tools Available
 
-- The `useFlipper` hook to debug the SDK with [Flipper](https://fbflipper.com/docs/extending/flipper-plugin/). To use follow the guide [here]().
+- The `useFlipper` hook to debug the SDK with [Flipper](https://fbflipper.com/docs/extending/flipper-plugin/). To use follow the guide [here](https://getstream.io/chat/docs/sdk/reactnative/guides/debug-mode-using-flipper-plugin/).
 
 ## ⚙️ How to use the package?
 
