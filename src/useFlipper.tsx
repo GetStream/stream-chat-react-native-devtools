@@ -37,30 +37,32 @@ export function useFlipper<
         await connectionRef.current?.send(action, data);
     };
 
-    const receive = async (
-        methodName: string,
-        listener: (...args: any[]) => Promise<any>
-    ) => {
-        await connectionRef.current?.receive(methodName, listener);
-    };
+    // Receive isn't supported yet
+    // const receive = async (
+    //     methodName: string,
+    //     listener: (...args: any[]) => Promise<any>
+    // ) => {
+    //     await connectionRef.current?.receive(methodName, listener);
+    // };
 
     const updateData = async (
         ref: React.RefObject<DebugContextValue<StreamChatGenerics>>
     ) => {
         if (ref.current) {
-            const { eventType, sendEventParams, receiveEventParams } =
-                ref.current;
+            const { eventType, sendEventParams } = ref.current;
             if (eventType === "send" && sendEventParams) {
                 await send(sendEventParams.action, sendEventParams.data);
-            } else if (
-                ref.current.eventType === "receive" &&
-                receiveEventParams
-            ) {
-                await receive(
-                    receiveEventParams.methodName,
-                    receiveEventParams.listener
-                );
             }
+            // Receive isn't supported yet
+            // else if (
+            //     ref.current.eventType === "receive" &&
+            //     receiveEventParams
+            // ) {
+            //     await receive(
+            //         receiveEventParams.methodName,
+            //         receiveEventParams.listener
+            //     );
+            // }
         }
     };
 
