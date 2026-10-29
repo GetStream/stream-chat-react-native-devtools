@@ -1,3 +1,5 @@
+> **This repository is archived and no longer maintained.** Its `useFlipper` hook goes with the Stream Flipper plugin, which is archived too. For a current alternative, see [React Native DevTools](https://reactnative.dev/docs/react-native-devtools).
+
 ### Stream Chat React Native Devtools 🚀
 
 Stream chat React Native Devtools is a collection of all the development tools you will need for the [Stream Chat React Native](https://github.com/GetStream/stream-chat-react-native) SDK.
